@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>basic details</title>
+</head>
+
+<body>
+    <?php 
+        include("Basic_details.php");
+        ?>
+    <form action=Basic_Details.php method="post">
+        <label>Enter Test Center Code</label><input type="number" name="center-code" method="post" /><br><br>
+        <label>Test Centre Name </label><input type="text" name="center-name" method="post" /><br>
+        <label>Auditor Name</label><input type="text" name="name" />
+        <label>Contact Number</label><input type="tel" name="number" /><br>
+        <label>Audit Date</label><input type="date" name="date" /><br>
+        <hr>
+        <h3>Enter Test Centre Administer details</h3>
+        <label>Name</label><input type="text" name="center-admin-name" method="post" /><br>
+        <label>Contact Number</label><input type="tel" name="center-admin-contact" method="post" /><br>
+        <hr>
+        <h3>Enter Test Centre IT Head details</h3>
+        <label>Name</label><input type="text" name="center-it-name" method="post" /><br>
+        <label>Contact Number</label><input type="tel" name="center-it-contact" method="post" /><br>
+        <hr>
+        <h3>Enter Test Centre System and Network admin Details</h3>
+        <label>Name</label><input type="text" name="center-network-admin-name" method="post" /><br>
+        <label>Contact Number</label><input type="tel" name="center-network-admin-contact" method="post" /><br>
+        <hr>
+        <label> Enter Total No of PC's
+        </label><input type="number" name="number-of-pc" />
+        <br>
+        <h3>How far is Center from Public transport facility?</h3>
+        <ul>
+            <label> Bus Stand (Main BUS Stand)</label><input type="number" name="Distance1" method="post" /><br>
+            <label> Railway Station</label><input type="number" name="Distance2" method="post" /><br>
+            <label> How far is Center from main City place?</label><input type="number" name="Distance3"
+                method="post" /><br>
+        </ul>
+        <label>Total No of PC's that can be booked ensuring Social Diatancing Norms i.e. Head to Head distance of 6 Feet Distance (Including Test Node, Buffer, Registration machines, Video recording machines)
+        </label><input type="text" name="PC's booked" method="post"/>
+
+
+
+    </form>
+</body>
+
+</html>
